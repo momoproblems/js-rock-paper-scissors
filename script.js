@@ -15,7 +15,7 @@ function getComputerChoice (){
 }
 
 function getPlayerChoice () {
-    let playerTemp = prompt("Choose rock, paper, or scissors")
+    let playerTemp;
     if (playerTemp.toLowerCase() === "rock") { 
         playerSelection = "rock";
     } else if (playerTemp.toLowerCase() === "paper") {
