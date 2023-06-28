@@ -8,6 +8,30 @@
 }
 
 html {
-    background-color: #131a0c;
     scroll-behavior: smooth;
+}
+
+body {
+    background-image: url('imgs/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: aqua;
+    border-width: 1px;
+    border-style: solid;
+}
+
+#container .content {
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+}
+img {
+    height: 100px;
+    margin-bottom: 10px;
 }
