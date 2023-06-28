@@ -37,10 +37,29 @@ img {
     margin-bottom: 10px;
 }
 
-img:hover {
+.selection:hover {
     cursor: pointer;
     transform: scale(0.9);
     transition: transform 200ms;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(94, 255, 0);
+
+}
+
+.player-selection {
+    margin-right: 50px;
+}
+
+.computer-selection{
+    margin-left: 50px;
 }
 
 .score {
@@ -54,7 +73,7 @@ img:hover {
     color: rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
     height: 100px;
-    width: 200px;
+    width: 100px;
 }
 
 .score .points {

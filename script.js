@@ -57,7 +57,6 @@ function playGame(playerSelection, computerSelection) {
         }
     }
 
-    console.log("before going to update score");
     updateScore(playerScore, computerScore);
 }
 
@@ -67,6 +66,7 @@ function updateScore(playerScore, computerScore) {
     console.log(computerScore);
     playerScoreElement.textContent = playerScore;
     computerScoreELement.textContent = computerScore;
+
 }
 
 
