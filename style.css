@@ -21,9 +21,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-color: aqua;
-    border-width: 1px;
-    border-style: solid;
+
 }
 
 #container .content {
@@ -54,14 +52,6 @@ img {
 
 }
 
-.player-selection {
-    margin-right: 50px;
-}
-
-.computer-selection{
-    margin-left: 50px;
-}
-
 .score {
     display: flex;
     flex-direction: column;
@@ -72,10 +62,22 @@ img {
     font-weight: bold;
     color: rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
-    height: 100px;
-    width: 100px;
 }
 
 .score .points {
     display: flex;
 }
+
+.middle-content {
+    display: flex;
+    flex-direction: column;
+}
+
+#result-message {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+}
+

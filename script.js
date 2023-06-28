@@ -1,6 +1,7 @@
 // rock paper scissor game
 var playerScore = 0;
 var computerScore = 0;
+var message = "";
 const playerScoreElement = document.getElementById("player-score");
 const computerScoreELement = document.getElementById("computer-score");
 const playerResultImgDiv = document.getElementById("player-selection");
@@ -24,37 +25,30 @@ function playGame(playerSelection, computerSelection) {
     console.log(computerSelection);
 
     if (playerSelection === computerSelection) {
-        console.log("It's a tie");
         computerScore++;
         playerScore++;
     }
     else if (playerSelection === "rock") {
         if (computerSelection === "paper") {
-            console.log("You lose! Paper beats Rock");
             computerScore++;
         }
         else {
-            console.log("You win! Rock beats Scissor");
             playerScore++;
         }
     }
     else if (playerSelection === "paper") {
         if (computerSelection === "rock") {
-            console.log("You win! Paper beats Rock");
             playerScore++;
         }
         else {
-            console.log("You lose! Scissor beats Paper");
             computerScore++;
         }
     }
     else if (playerSelection === "scissor") {
         if (computerSelection === "rock") {
-            console.log("You lose! Rock beats Scissor");
             computerScore++;
         }
         else {
-            console.log("You win! Scissor beats Paper");
             playerScore++;
         }
     }
@@ -92,6 +86,7 @@ function displayResult(playerSelection, computerSelection) {
 
     playerImgElement.src = "imgs/" + playerSelection + ".svg";
     computerImgElement.src = "imgs/" + computerSelection + ".svg";
+    
 
     playerResultImgDiv.appendChild(playerImgElement);
     computerResultImgDiv.appendChild(computerImgElement);
