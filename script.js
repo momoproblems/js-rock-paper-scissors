@@ -3,6 +3,8 @@ var playerScore = 0;
 var computerScore = 0;
 const playerScoreElement = document.getElementById("player-score");
 const computerScoreELement = document.getElementById("computer-score");
+const playerResultImgDiv = document.getElementById("player-selection");
+const computerResultImgDiv = document.getElementById("computer-selection");
 
 const selectionButton = document.querySelectorAll("[data-selection]");
 
@@ -57,6 +59,7 @@ function playGame(playerSelection, computerSelection) {
         }
     }
 
+    displayResult(playerSelection, computerSelection);
     updateScore(playerScore, computerScore);
 }
 
@@ -75,4 +78,21 @@ function computerPlay() {
     let choices = ["rock", "paper", "scissor"];
     let random = Math.floor(Math.random() * choices.length);
     return choices[random];
+}
+
+// function to display result
+function displayResult(playerSelection, computerSelection) {
+    // remove previous result
+    playerResultImgDiv.innerHTML = "";
+    computerResultImgDiv.innerHTML = "";
+
+
+    let playerImgElement = document.createElement("img");
+    let computerImgElement = document.createElement("img");
+
+    playerImgElement.src = "imgs/" + playerSelection + ".svg";
+    computerImgElement.src = "imgs/" + computerSelection + ".svg";
+
+    playerResultImgDiv.appendChild(playerImgElement);
+    computerResultImgDiv.appendChild(computerImgElement);
 }
