@@ -10,14 +10,18 @@
     <main>
         <div id="container">
             <div class="content">
-                <img onclick="" src="imgs/rock.svg" alt="rock" class="rock">
-                <img src="imgs/paper.svg" alt="paper" class="paper">
-                <img src="imgs/scissor.svg" alt="scissors" class="scissors">
+                <img src="imgs/rock.svg" alt="rock" class="selection" data-selection="rock">
+                <img src="imgs/paper.svg" alt="paper" class="selection" data-selection="paper">
+                <img src="imgs/scissor.svg" alt="scissors" class="selection" data-selection="scissor">
             </div>
 
             <div class="score">
                 <p>Score</p>
-                <p>0 - 0</p>
+                <div class="points">
+                    <p id="human-score">0</p>
+                    <p>- </p>
+                    <p id="computer-score">0</p>
+                </div>
             </div>
 
             <div class="content">

@@ -40,7 +40,7 @@ img {
 img:hover {
     cursor: pointer;
     transform: scale(0.9);
-    transition: transform 0.2s;
+    transition: transform 200ms;
 }
 
 .score {
@@ -55,4 +55,8 @@ img:hover {
     background-color: rgb(255, 255, 255);
     height: 100px;
     width: 200px;
+}
+
+.score .points {
+    display: flex;
 }
