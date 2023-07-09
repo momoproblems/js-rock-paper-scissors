@@ -7,32 +7,36 @@
     padding: 0;
 }
 
+
+* > * > * {
+    border: 1px solid rgb(52, 185, 12);
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    background-image: url('imgs/background.jpg');
+    background-color: #ad5d5d;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
 
 }
 
 #container .content {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
-    padding: 200px;
 }
 
 img {
     height: 100px;
-    margin-bottom: 10px;
 }
 
 .selection:hover {
@@ -70,7 +74,9 @@ img {
 
 .middle-content {
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
 }
 
 #result-message {

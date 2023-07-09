@@ -12,7 +12,6 @@ const selectionButton = document.querySelectorAll("[data-selection]");
 selectionButton.forEach(selectionButton => {
     selectionButton.addEventListener("click", e => {
         const selectionName = selectionButton.dataset.selection;
-
         const computerSelection = computerPlay();
 
         playGame(selectionName, computerSelection);
@@ -21,8 +20,6 @@ selectionButton.forEach(selectionButton => {
 });
 
 function playGame(playerSelection, computerSelection) {
-    console.log(playerSelection);
-    console.log(computerSelection);
 
     if (playerSelection === computerSelection) {
         computerScore++;
@@ -59,8 +56,6 @@ function playGame(playerSelection, computerSelection) {
 
 // function to update score
 function updateScore(playerScore, computerScore) {
-    console.log(playerScore);
-    console.log(computerScore);
     playerScoreElement.textContent = playerScore;
     computerScoreELement.textContent = computerScore;
 
